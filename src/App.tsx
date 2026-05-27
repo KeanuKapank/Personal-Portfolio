@@ -1,16 +1,21 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PageLayout from "./layout/PageLayout";
+import PageNotFound from "./pages/PageNotFound";
+import Home from "./pages/Home";
+
 function App() {
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-dot-grid">
-      <div className="card rotate-tilt-ccw">
-        <span className="tag tag-ink">React</span>
-        <h2 className="text-headline-md">My Project</h2>
-        <p className="text-body-lg text-body-md">A short description here.</p>
-        <a href="#" className="btn btn-primary">
-          View Work
-        </a>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<PageLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<div>About</div>} />
+          <Route path="/projects" element={<div>Projects</div>} />
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter> 
   );
 }
 
