@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { animate, motion, useInView } from "framer-motion";
+import { animate, useInView } from "framer-motion";
 
 // Reusable Counter Component
 export default function Counter({ from = 0, to = 0, duration = 2 }) {
@@ -34,8 +34,8 @@ export default function Counter({ from = 0, to = 0, duration = 2 }) {
   }, [from, to, duration, isInView]);
 
   return (
-    <motion.span ref={ref}>
+    <span ref={ref}>
       {from}
-    </motion.span>
+    </span>
   );
 }
