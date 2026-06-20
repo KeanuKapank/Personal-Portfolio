@@ -1,11 +1,14 @@
 import { useEffect, useRef } from "react";
-import { animate } from "framer-motion";
+import { animate, motion, useInView } from "framer-motion";
 
 // Reusable Counter Component
 export default function Counter({ from = 0, to = 0, duration = 2 }) {
   const ref = useRef<HTMLSpanElement>(null);
 
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
+
   useEffect(() => {
+    if (!isInView) return;
     // Validate inputs
     const start = typeof from === "number" ? from : 0;
     const end = typeof to === "number" ? to : 0;
@@ -20,6 +23,7 @@ export default function Counter({ from = 0, to = 0, duration = 2 }) {
     // Animate number counting
     const controls = animate(start, end, {
       duration: safeDuration,
+      ease: "easeOut",
       onUpdate(value) {
         if (ref.current) ref.current.textContent = Math.floor(value).toString();
       }
@@ -27,11 +31,11 @@ export default function Counter({ from = 0, to = 0, duration = 2 }) {
 
     // Cleanup
     return () => controls.stop();
-  }, [from, to, duration]);
+  }, [from, to, duration, isInView]);
 
   return (
-    <span ref={ref} style={{ fontWeight: "bold" }}>
+    <motion.span ref={ref}>
       {from}
-    </span>
+    </motion.span>
   );
 }
