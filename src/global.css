@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 @import "tailwindcss";
 
 /* ============================================================
@@ -8,83 +8,83 @@
    ============================================================ */
 
 @theme {
-
   /* ----------------------------------------------------------
      COLORS — flat "fills", no gradients
      Charcoal linework + Paper foundation + Ink / Highlighter / Marker accents
   ---------------------------------------------------------- */
 
   /* Surface scale */
-  --color-surface:                  #fcf9f8;
-  --color-surface-dim:              #dcd9d9;
-  --color-surface-bright:           #fcf9f8;
+  --color-surface: #fcf9f8;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-bright: #fcf9f8;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low:    #f6f3f2;
-  --color-surface-container:        #f0eded;
-  --color-surface-container-high:   #eae7e7;
-  --color-surface-container-highest:#e4e2e1;
-  --color-surface-variant:          #e4e2e1;
-  --color-surface-tint:             #006a65;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e4e2e1;
+  --color-surface-variant: #e4e2e1;
+  --color-surface-tint: #006a65;
 
   /* On-surface */
-  --color-on-surface:               #1b1c1c;
-  --color-on-surface-variant:       #3c4948;
-  --color-inverse-surface:          #303030;
-  --color-inverse-on-surface:       #f3f0f0;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #3c4948;
+  --color-inverse-surface: #303030;
+  --color-inverse-on-surface: #f3f0f0;
 
   /* Outline / borders */
-  --color-outline:                  #6c7a78;
-  --color-outline-variant:          #bbc9c7;
+  --color-outline: #6c7a78;
+  --color-outline-variant: #bbc9c7;
 
   /* Background */
-  --color-background:               #fcf9f8;
-  --color-on-background:            #1b1c1c;
+  --color-background: #fcf9f8;
+  --color-on-background: #1b1c1c;
 
   /* ── Primary — "Ink" Teal ── */
-  --color-primary:                  #006a65;
-  --color-on-primary:               #ffffff;
-  --color-primary-container:        #20b2aa;
-  --color-on-primary-container:     #003e3b;
-  --color-inverse-primary:          #59dad1;
-  --color-primary-fixed:            #79f6ed;
-  --color-primary-fixed-dim:        #59dad1;
-  --color-on-primary-fixed:         #00201e;
+  --color-primary: #006a65;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #20b2aa;
+  --color-on-primary-container: #003e3b;
+  --color-inverse-primary: #59dad1;
+  --color-primary-fixed: #79f6ed;
+  --color-primary-fixed-dim: #59dad1;
+  --color-primary-fixed-light: #bef8f7;
+  --color-on-primary-fixed: #00201e;
   --color-on-primary-fixed-variant: #00504c;
 
   /* ── Secondary — "Highlighter" Yellow ── */
-  --color-secondary:                #7c5800;
-  --color-on-secondary:             #ffffff;
-  --color-secondary-container:      #feb700;
-  --color-on-secondary-container:   #6b4b00;
-  --color-secondary-fixed:          #ffdea8;
-  --color-secondary-fixed-dim:      #ffba20;
-  --color-on-secondary-fixed:       #271900;
-  --color-on-secondary-fixed-variant:#5e4200;
+  --color-secondary: #7c5800;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #feb700;
+  --color-on-secondary-container: #6b4b00;
+  --color-secondary-fixed: #ffdea8;
+  --color-secondary-fixed-dim: #ffba20;
+  --color-on-secondary-fixed: #271900;
+  --color-on-secondary-fixed-variant: #5e4200;
 
   /* ── Tertiary — "Marker" Coral ── */
-  --color-tertiary:                 #ae2f34;
-  --color-on-tertiary:              #ffffff;
-  --color-tertiary-container:       #ff7473;
-  --color-on-tertiary-container:    #740012;
-  --color-tertiary-fixed:           #ffdad8;
-  --color-tertiary-fixed-dim:       #ffb3b0;
-  --color-on-tertiary-fixed:        #410006;
-  --color-on-tertiary-fixed-variant:#8c1520;
+  --color-tertiary: #ae2f34;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #ff7473;
+  --color-on-tertiary-container: #740012;
+  --color-tertiary-fixed: #ffdad8;
+  --color-tertiary-fixed-dim: #ffb3b0;
+  --color-on-tertiary-fixed: #410006;
+  --color-on-tertiary-fixed-variant: #8c1520;
 
   /* ── Error ── */
-  --color-error:                    #ba1a1a;
-  --color-on-error:                 #ffffff;
-  --color-error-container:          #ffdad6;
-  --color-on-error-container:       #93000a;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
 
   /* ── Named semantic aliases (DESIGN.md vocabulary) ── */
-  --color-charcoal:                 #2d2d2d;   /* linework, borders, primary text */
-  --color-paper:                    #fcf9f8;   /* warm off-white background */
-  --color-ink:                      #20b2aa;   /* primary action color */
-  --color-ink-highlight:            #20b2aa;   /* primary action color */
-  --color-highlighter:              #ffb800;   /* emphasis / warnings */
-  --color-marker:                   #ff6b6b;   /* errors / deletions / callouts */
-  --color-graph-line:               #e5e5e5;   /* faint graph-paper / dot-grid lines */
+  --color-charcoal: #2d2d2d; /* linework, borders, primary text */
+  --color-paper: #fcf9f8; /* warm off-white background */
+  --color-ink: #20b2aa; /* primary action color */
+  --color-ink-highlight: #20b2aa; /* primary action color */
+  --color-highlighter: #ffb800; /* emphasis / warnings */
+  --color-marker: #ff6b6b; /* errors / deletions / callouts */
+  --color-graph-line: #e5e5e5; /* faint graph-paper / dot-grid lines */
 
   /* ----------------------------------------------------------
      TYPOGRAPHY
@@ -92,33 +92,34 @@
   ---------------------------------------------------------- */
 
   /* Font families */
-  --font-display:  "Bricolage Grotesque", sans-serif;
-  --font-body:     "Hanken Grotesk", sans-serif;
-  --font-mono:     "JetBrains Mono", monospace;
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-body: "Hanken Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
   /* Font sizes (design-token scale) */
-  --font-size-display-lg:        3rem;     /* 48px */
-  --font-size-display-lg-mobile: 2.25rem;  /* 36px */
-  --font-size-headline-md:       2rem;     /* 32px */
-  --font-size-headline-sm:       1.5rem;   /* 24px */
-  --font-size-body-lg:           1.125rem; /* 18px */
-  --font-size-body-md:           1rem;     /* 16px */
-  --font-size-label-caps:        0.875rem; /* 14px */
-  --font-size-caption:           0.75rem;  /* 12px */
+  --font-size-display-lg: 3rem; /* 48px */
+  --font-size-display-lg-mobile: 2.25rem; /* 36px */
+  --font-size-headline-md: 2rem; /* 32px */
+  --font-size-headline-sm: 1.5rem; /* 24px */
+  --font-size-body-lg: 1.125rem; /* 18px */
+  --font-size-body-md: 1rem; /* 16px */
+  --font-size-body-sm: 0.875rem; /* 14px */
+  --font-size-label-caps: 0.875rem; /* 14px */
+  --font-size-caption: 0.75rem; /* 12px */
 
   /* Font weights */
   --font-weight-extrabold: 800;
-  --font-weight-bold:      700;
-  --font-weight-semibold:  600;
-  --font-weight-medium:    500;
-  --font-weight-normal:    400;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
 
   /* Line heights */
-  --line-height-tight:   1.1;  /* display */
-  --line-height-snug:    1.2;  /* headlines */
-  --line-height-normal:  1.5;  /* body-md  */
-  --line-height-relaxed: 1.6;  /* body-lg — "ruled paper" spacing */
-  --line-height-none:    1.0;  /* label-caps */
+  --line-height-tight: 1.1; /* display */
+  --line-height-snug: 1.2; /* headlines */
+  --line-height-normal: 1.5; /* body-md  */
+  --line-height-relaxed: 1.6; /* body-lg — "ruled paper" spacing */
+  --line-height-none: 1; /* label-caps */
   --line-height-caption: 1.4;
 
   /* Letter spacing */
@@ -128,44 +129,42 @@
      SPACING — 8px baseline grid
   ---------------------------------------------------------- */
 
-  --spacing-unit:           0.5rem;   /* 8px  — baseline unit */
-  --spacing-gutter:         1.5rem;   /* 24px */
-  --spacing-margin-mobile:  1rem;     /* 16px */
-  --spacing-margin-desktop: 4rem;     /* 64px */
-  --spacing-stack-sm:       0.5rem;   /* 8px  */
-  --spacing-stack-md:       1rem;     /* 16px */
-  --spacing-stack-lg:       2rem;     /* 32px */
+  --spacing-unit: 0.5rem; /* 8px  — baseline unit */
+  --spacing-gutter: 1.5rem; /* 24px */
+  --spacing-margin-mobile: 1rem; /* 16px */
+  --spacing-margin-desktop: 4rem; /* 64px */
+  --spacing-stack-sm: 0.5rem; /* 8px  */
+  --spacing-stack-md: 1rem; /* 16px */
+  --spacing-stack-lg: 2rem; /* 32px */
 
   /* Decorative offset range used for "scattered paper" effect */
-  --spacing-offset-min:     4px;
-  --spacing-offset-max:     8px;
+  --spacing-offset-min: 4px;
+  --spacing-offset-max: 8px;
 
   /* ----------------------------------------------------------
      BORDER RADIUS — Imperfect Geometry
      Asymmetric values simulate hand-drawn shapes.
   ---------------------------------------------------------- */
 
-  --radius-sm:      0.125rem;
+  --radius-sm: 0.125rem;
   --radius-default: 0.25rem;
-  --radius-md:      0.375rem;
-  --radius-lg:      0.5rem;
-  --radius-xl:      0.75rem;
-  --radius-full:    9999px;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
 
   /* Hand-drawn asymmetric "squircle" — use on cards & buttons */
-  --radius-sketchy:
-    255px 15px 225px 15px / 15px 225px 15px 255px;
+  --radius-sketchy: 255px 15px 225px 15px / 15px 225px 15px 255px;
 
   /* Looser sketchy variant for sticky-note cards */
-  --radius-sticky:
-    180px 12px 200px 10px / 10px 200px 12px 180px;
+  --radius-sticky: 180px 12px 200px 10px / 10px 200px 12px 180px;
 
   /* ----------------------------------------------------------
      BORDERS — minimum 2px charcoal linework
   ---------------------------------------------------------- */
 
   --border-width-default: 2px;
-  --border-width-thick:   3px;
+  --border-width-thick: 3px;
   --border-color-default: var(--color-charcoal);
 
   /* ----------------------------------------------------------
@@ -174,8 +173,8 @@
   ---------------------------------------------------------- */
 
   /* Card offset block: solid charcoal rectangle shifted SE */
-  --elevation-offset-x:  4px;
-  --elevation-offset-y:  4px;
+  --elevation-offset-x: 4px;
+  --elevation-offset-y: 4px;
   --elevation-offset-color: var(--color-charcoal);
 
   /* Larger offset for primary call-to-action */
@@ -183,13 +182,11 @@
   --elevation-offset-y-lg: 6px;
 
   /* Box-shadow utilities that replicate offset-fill behaviour */
-  --shadow-offset-sm:
-    var(--elevation-offset-x) var(--elevation-offset-y) 0 0
+  --shadow-offset-sm: var(--elevation-offset-x) var(--elevation-offset-y) 0 0
     var(--elevation-offset-color);
 
-  --shadow-offset-lg:
-    var(--elevation-offset-x-lg) var(--elevation-offset-y-lg) 0 0
-    var(--elevation-offset-color);
+  --shadow-offset-lg: var(--elevation-offset-x-lg) var(--elevation-offset-y-lg)
+    0 0 var(--elevation-offset-color);
 
   /* Button "pressed" state — fill aligns with shadow (no offset) */
   --shadow-offset-pressed: 0 0 0 0 var(--elevation-offset-color);
@@ -198,36 +195,36 @@
      TRANSITIONS & ANIMATION
   ---------------------------------------------------------- */
 
-  --duration-fast:   120ms;
-  --duration-base:   200ms;
-  --duration-slow:   350ms;
-  --ease-sketch:     cubic-bezier(0.34, 1.56, 0.64, 1); /* springy "press" */
-  --ease-default:    cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 350ms;
+  --ease-sketch: cubic-bezier(0.34, 1.56, 0.64, 1); /* springy "press" */
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
 
   /* ----------------------------------------------------------
      Z-INDEX SCALE
   ---------------------------------------------------------- */
 
-  --z-base:    0;
-  --z-raised:  10;   /* offset block sits here */
-  --z-card:    20;
+  --z-base: 0;
+  --z-raised: 10; /* offset block sits here */
+  --z-card: 20;
   --z-overlay: 30;
-  --z-nav:     40;
-  --z-modal:   50;
+  --z-nav: 40;
+  --z-modal: 50;
 
   /* ----------------------------------------------------------
      LAYOUT
   ---------------------------------------------------------- */
 
-  --container-max:    1280px;
+  --container-max: 1280px;
   --columns-desktop: 12;
-  --columns-mobile:  4;
+  --columns-mobile: 4;
 
   /* Slight tilt range for "scattered desk" grid-breaking elements */
-  --rotate-tilt-cw:  1.5deg;
+  --rotate-tilt-cw: 1.5deg;
   --rotate-tilt-ccw: -1.5deg;
-  --rotate-tilt-sm:  0.75deg;
-
+  --rotate-tilt-sm: 0.75deg;
+  --rotate-tilt-xsm: -0.25deg;
 }
 
 /* ============================================================
@@ -235,7 +232,6 @@
    ============================================================ */
 
 @layer base {
-
   *,
   *::before,
   *::after {
@@ -251,10 +247,10 @@
 
   body {
     background-color: var(--color-paper);
-    color:            var(--color-charcoal);
-    font-family:      var(--font-body);
-    font-size:        var(--font-size-body-md);
-    line-height:      var(--line-height-normal);
+    color: var(--color-charcoal);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body-md);
+    line-height: var(--line-height-normal);
 
     /* Subtle dot-grid graph-paper backdrop */
     background-image: radial-gradient(
@@ -265,50 +261,63 @@
     background-size: 24px 24px;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family:  var(--font-display);
-    font-weight:  var(--font-weight-bold);
-    line-height:  var(--line-height-snug);
-    color:        var(--color-charcoal);
-    text-wrap:    balance;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-snug);
+    color: var(--color-charcoal);
+    text-wrap: balance;
   }
 
   h1 {
-    font-size:      var(--font-size-display-lg);
-    font-weight:    var(--font-weight-extrabold);
+    font-size: var(--font-size-display-lg);
+    font-weight: var(--font-weight-extrabold);
     letter-spacing: var(--letter-spacing-tight);
-    line-height:    var(--line-height-tight);
+    line-height: var(--line-height-tight);
   }
 
-  h2 { font-size: var(--font-size-headline-md); }
-  h3 { font-size: var(--font-size-headline-sm); }
+  h2 {
+    font-size: var(--font-size-headline-md);
+  }
+  h3 {
+    font-size: var(--font-size-headline-sm);
+  }
 
   p {
     font-family: var(--font-body);
-    font-size:   var(--font-size-body-md);
+    font-size: var(--font-size-body-md);
     line-height: var(--line-height-normal);
-    max-width:   68ch; /* ruled-paper reading measure */
+    max-width: 68ch; /* ruled-paper reading measure */
   }
 
-  code, kbd, samp, pre {
+  code,
+  kbd,
+  samp,
+  pre {
     font-family: var(--font-mono);
-    font-size:   var(--font-size-label-caps);
+    font-size: var(--font-size-label-caps);
   }
 
   /* Inputs — horizontal-line style */
   input,
   textarea {
-    background:    transparent;
-    border:        none;
+    background: transparent;
+    border: none;
     border-bottom: var(--border-width-default) solid var(--color-charcoal);
     border-radius: 0;
-    padding:       0.375rem 0;
-    font-family:   var(--font-body);
-    font-size:     var(--font-size-body-md);
-    color:         var(--color-charcoal);
-    outline:       none;
-    transition:    border-color var(--duration-base) var(--ease-default),
-                   box-shadow   var(--duration-base) var(--ease-default);
+    padding: 0.375rem 0;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body-md);
+    color: var(--color-charcoal);
+    outline: none;
+    transition:
+      border-color var(--duration-base) var(--ease-default),
+      box-shadow var(--duration-base) var(--ease-default);
   }
 
   input:focus,
@@ -317,7 +326,6 @@
     border-bottom-color: var(--color-ink);
     box-shadow: 0 3px 0 0 var(--color-ink);
   }
-
 }
 
 /* ============================================================
@@ -325,83 +333,79 @@
    ============================================================ */
 
 @layer components {
-
   /* ----------------------------------------------------------
      Button — solid fill + offset shadow + press effect
   ---------------------------------------------------------- */
   .btn {
-    display:          inline-flex;
-    align-items:      center;
-    justify-content:  center;
-    gap:              0.5rem;
-    padding:          0.625rem 1.25rem;
-    font-family:      var(--font-display);
-    font-weight:      var(--font-weight-bold);
-    font-size:        var(--font-size-body-md);
-    line-height:      1;
-    border:           var(--border-width-default) solid var(--color-charcoal);
-    border-radius:    var(--radius-sketchy);
-    cursor:           pointer;
-    position:         relative;
-    box-shadow:       var(--shadow-offset-sm);
-    transition:       transform   var(--duration-fast) var(--ease-sketch),
-                      box-shadow  var(--duration-fast) var(--ease-sketch);
-    text-decoration:  none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-body-md);
+    line-height: 1;
+    border: var(--border-width-default) solid var(--color-charcoal);
+    border-radius: var(--radius-sketchy);
+    cursor: pointer;
+    position: relative;
+    box-shadow: var(--shadow-offset-sm);
+    transition:
+      transform var(--duration-fast) var(--ease-sketch),
+      box-shadow var(--duration-fast) var(--ease-sketch);
+    text-decoration: none;
   }
 
   .btn:hover {
-    transform:   translate(-1px, -1px);
-    box-shadow:  calc(var(--elevation-offset-x) + 2px)
-                 calc(var(--elevation-offset-y) + 2px)
-                 0 0 var(--elevation-offset-color);
+    transform: translate(-1px, -1px);
+    box-shadow: calc(var(--elevation-offset-x) + 2px)
+      calc(var(--elevation-offset-y) + 2px) 0 0 var(--elevation-offset-color);
   }
 
   .btn:active {
-    transform:  translate(
-                  var(--elevation-offset-x),
-                  var(--elevation-offset-y)
-                );
+    transform: translate(var(--elevation-offset-x), var(--elevation-offset-y));
     box-shadow: var(--shadow-offset-pressed);
   }
 
   /* Variants */
   .btn-primary {
     background-color: var(--color-ink);
-    color:            var(--color-on-primary);
+    color: var(--color-on-primary);
   }
 
   .btn-secondary {
     background-color: var(--color-highlighter);
-    color:            var(--color-charcoal);
+    color: var(--color-charcoal);
   }
 
   .btn-danger {
     background-color: var(--color-marker);
-    color:            var(--color-on-tertiary);
+    color: var(--color-on-tertiary);
   }
 
   .btn-ghost {
     background-color: transparent;
-    color:            var(--color-charcoal);
-    box-shadow:       none;
+    color: var(--color-charcoal);
+    box-shadow: none;
   }
 
   .btn-ghost:hover {
-    transform:   none;
-    box-shadow:  none;
+    transform: none;
+    box-shadow: none;
   }
 
   /* ----------------------------------------------------------
      Card / Sticky Note — yellow or coral fill, dog-ear corner
   ---------------------------------------------------------- */
   .card-sticky {
-    position:         relative;
-    padding:          1.5rem;
-    border:           var(--border-width-default) solid var(--color-charcoal);
-    border-radius:    var(--radius-sticky);
+    position: absolute;
+    padding: 1.5rem;
+    border: var(--border-width-default) solid var(--color-charcoal);
+    border-radius: var(--radius-sticky);
     background-color: var(--color-highlighter);
-    color:            var(--color-charcoal);
-    box-shadow:       var(--shadow-offset-sm);
+    color: var(--color-charcoal);
+    box-shadow: var(--shadow-offset-sm);
 
     /* Dog-ear fold via clip-path */
     clip-path: polygon(
@@ -414,106 +418,119 @@
   }
 
   .card-sticky::before {
-    content:          "";
-    position:         absolute;
-    top:              0;
-    right:            0;
-    width:            20px;
-    height:           20px;
-    background-color: color-mix(in srgb, var(--color-charcoal) 25%, transparent);
-    clip-path:        polygon(0% 0%, 100% 100%, 0% 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: color-mix(
+      in srgb,
+      var(--color-charcoal) 25%,
+      transparent
+    );
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
   }
 
   .card-sticky-coral {
     background-color: var(--color-marker);
-    color:            var(--color-on-tertiary);
+    color: var(--color-on-tertiary);
   }
 
   /* Generic project card with offset-block elevation */
   .card {
-    position:         relative;
-    padding:          1.5rem;
-    border:           var(--border-width-default) solid var(--color-charcoal);
-    border-radius:    var(--radius-sketchy);
+    position: relative;
+    padding: 1.5rem;
+    border: var(--border-width-default) solid var(--color-charcoal);
+    border-radius: var(--radius-sketchy);
     background-color: var(--color-surface-container-low);
-    color:            var(--color-on-surface);
-    box-shadow:       var(--shadow-offset-sm);
-    transition:       transform  var(--duration-base) var(--ease-sketch),
-                      box-shadow var(--duration-base) var(--ease-sketch);
+    color: var(--color-on-surface);
+    box-shadow: var(--shadow-offset-sm);
+    transition:
+      transform var(--duration-base) var(--ease-sketch),
+      box-shadow var(--duration-base) var(--ease-sketch);
   }
 
   .card:hover {
-    transform:   translate(-2px, -2px);
-    box-shadow:  calc(var(--elevation-offset-x) + 2px)
-                 calc(var(--elevation-offset-y) + 2px)
-                 0 0 var(--elevation-offset-color);
+    transform: translate(-2px, -2px);
+    box-shadow: calc(var(--elevation-offset-x) + 2px)
+      calc(var(--elevation-offset-y) + 2px) 0 0 var(--elevation-offset-color);
+  }
+
+  .container-popout {
+    position: relative;
+    border: var(--border-width-thick) solid var(--color-charcoal);
+    background-color: var(--color-surface-container-low);
+    color: var(--color-on-surface);
+    box-shadow: var(--shadow-offset-sm);
   }
 
   /* ----------------------------------------------------------
      Tag / Chip — masking-tape / dymo-label style
   ---------------------------------------------------------- */
   .tag {
-    display:          inline-flex;
-    align-items:      center;
-    padding:          0.1875rem 0.625rem;
-    font-family:      var(--font-mono);
-    font-size:        var(--font-size-label-caps);
-    font-weight:      var(--font-weight-semibold);
-    line-height:      var(--line-height-none);
-    border:           var(--border-width-default) solid var(--color-charcoal);
-    border-radius:    var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    padding: 0.1875rem 0.625rem;
+    font-family: var(--font-mono);
+    font-size: var(--font-size-label-caps);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-none);
+    border: var(--border-width-default) solid var(--color-charcoal);
+    border-radius: var(--radius-sm);
     background-color: var(--color-surface-container-highest);
-    color:            var(--color-charcoal);
-    letter-spacing:   0.03em;
+    color: var(--color-charcoal);
+    letter-spacing: 0.03em;
 
     /* Slight tape-strip rotation applied per-instance via JS or utility class */
   }
 
   .tag-ink {
     background-color: var(--color-ink);
-    color:            var(--color-on-primary);
+    color: var(--color-on-primary);
   }
 
   .tag-highlight {
     background-color: var(--color-highlighter);
-    color:            var(--color-charcoal);
+    color: var(--color-charcoal);
   }
 
   .tag-marker {
     background-color: var(--color-marker);
-    color:            var(--color-on-tertiary);
+    color: var(--color-on-tertiary);
   }
 
   /* ----------------------------------------------------------
      Nav link — "Scribble" highlighter hover state
   ---------------------------------------------------------- */
   .nav-link {
-    position:        relative;
-    display:         inline-block;
-    font-family:     var(--font-display);
-    font-weight:     var(--font-weight-bold);
-    color:           var(--color-charcoal);
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-charcoal);
     text-decoration: none;
-    padding:         0.125rem 0.25rem;
-    transition:      color var(--duration-base) var(--ease-default);
+    padding: 0.125rem 0.25rem;
+    transition: color var(--duration-base) var(--ease-default);
   }
 
   .nav-link::after {
-    content:          "";
-    position:         absolute;
-    inset:            0;
+    content: "";
+    position: absolute;
+    inset: 0;
     background-color: var(--color-highlighter);
-    opacity:          0;
-    z-index:          -1;
-    border-radius:    var(--radius-sm);
-    transform:        rotate(-0.75deg) scaleX(0.92);
+    opacity: 0;
+    z-index: -1;
+    border-radius: var(--radius-sm);
+    transform: rotate(-0.75deg) scaleX(0.92);
     transform-origin: left center;
-    transition:       opacity    var(--duration-base) var(--ease-default),
-                      transform  var(--duration-base) var(--ease-sketch);
+    transition:
+      opacity var(--duration-base) var(--ease-default),
+      transform var(--duration-base) var(--ease-sketch);
   }
 
   .nav-link:hover::after {
-    opacity:   0.65;
+    opacity: 0.65;
     transform: rotate(-0.75deg) scaleX(1);
   }
 
@@ -521,65 +538,71 @@
      Typography utilities
   ---------------------------------------------------------- */
   .text-display-lg {
-    font-family:    var(--font-display);
-    font-size:      var(--font-size-display-lg);
-    font-weight:    var(--font-weight-extrabold);
-    line-height:    var(--line-height-tight);
+    font-family: var(--font-display);
+    font-size: var(--font-size-display-lg);
+    font-weight: var(--font-weight-extrabold);
+    line-height: var(--line-height-tight);
     letter-spacing: var(--letter-spacing-tight);
   }
 
   .text-display-lg-mobile {
-    font-family:  var(--font-display);
-    font-size:    var(--font-size-display-lg-mobile);
-    font-weight:  var(--font-weight-extrabold);
-    line-height:  var(--line-height-tight);
+    font-family: var(--font-display);
+    font-size: var(--font-size-display-lg-mobile);
+    font-weight: var(--font-weight-extrabold);
+    line-height: var(--line-height-tight);
   }
 
   .text-headline-md {
     font-family: var(--font-display);
-    font-size:   var(--font-size-headline-md);
+    font-size: var(--font-size-headline-md);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-snug);
   }
 
   .text-headline-sm {
     font-family: var(--font-display);
-    font-size:   var(--font-size-headline-sm);
+    font-size: var(--font-size-headline-sm);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-snug);
   }
 
   .text-body-lg {
     font-family: var(--font-body);
-    font-size:   var(--font-size-body-lg);
+    font-size: var(--font-size-body-lg);
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-relaxed);
   }
 
   .text-body-md {
     font-family: var(--font-body);
-    font-size:   var(--font-size-body-md);
+    font-size: var(--font-size-body-md);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+  }
+
+  .text-body-sm {
+    font-family: var(--font-body);
+    font-size: var(--font-size-body-sm);
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-normal);
   }
 
   .text-label-caps {
-    font-family:    var(--font-mono);
-    font-size:      var(--font-size-label-caps);
-    font-weight:    var(--font-weight-semibold);
-    line-height:    var(--line-height-none);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-label-caps);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-none);
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
 
   .text-caption {
     font-family: var(--font-body);
-    font-size:   var(--font-size-caption);
+    font-size: var(--font-size-caption);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-caption);
     letter-spacing: 0.05em;
   }
-
 }
 
 /* ============================================================
@@ -587,22 +610,44 @@
    ============================================================ */
 
 @layer utilities {
-
   /* Shadow offset helpers */
-  .shadow-offset       { box-shadow: var(--shadow-offset-sm); }
-  .shadow-offset-lg    { box-shadow: var(--shadow-offset-lg); }
-  .shadow-offset-none  { box-shadow: var(--shadow-offset-pressed); }
+  .shadow-offset {
+    box-shadow: var(--shadow-offset-sm);
+  }
+  .shadow-offset-lg {
+    box-shadow: var(--shadow-offset-lg);
+  }
+  .shadow-offset-none {
+    box-shadow: var(--shadow-offset-pressed);
+  }
 
   /* Sketchy borders */
-  .border-sketchy      { border-radius: var(--radius-sketchy); }
-  .border-sticky       { border-radius: var(--radius-sticky); }
-  .border-charcoal     { border: var(--border-width-default) solid var(--color-charcoal); }
-  .border-charcoal-thick { border: var(--border-width-thick) solid var(--color-charcoal); }
+  .border-sketchy {
+    border-radius: var(--radius-sketchy);
+  }
+  .border-sticky {
+    border-radius: var(--radius-sticky);
+  }
+  .border-charcoal {
+    border: var(--border-width-default) solid var(--color-charcoal);
+  }
+  .border-charcoal-thick {
+    border: var(--border-width-thick) solid var(--color-charcoal);
+  }
 
   /* Tilt helpers — "scattered desk" grid-breaking */
-  .rotate-tilt-cw      { transform: rotate(var(--rotate-tilt-cw)); }
-  .rotate-tilt-ccw     { transform: rotate(var(--rotate-tilt-ccw)); }
-  .rotate-tilt-sm      { transform: rotate(var(--rotate-tilt-sm)); }
+  .rotate-tilt-cw {
+    transform: rotate(var(--rotate-tilt-cw));
+  }
+  .rotate-tilt-ccw {
+    transform: rotate(var(--rotate-tilt-ccw));
+  }
+  .rotate-tilt-sm {
+    transform: rotate(var(--rotate-tilt-sm));
+  }
+  .rotate-tilt-xsm {
+    transform: rotate(var(--rotate-tilt-xsm));
+  }
 
   /* Offset nudge helpers for "scattered paper" positioning */
   .translate-offset-sm {
@@ -631,35 +676,75 @@
 
   /* Scribble underline decoration */
   .underline-scribble {
-    text-decoration:       underline;
+    text-decoration: underline;
     text-decoration-color: var(--color-ink);
     text-decoration-style: wavy;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
 
-  .underline-highlight {
-    background-image: linear-gradient(120deg, var(--color-primary-fixed-dim));
+  .line-broken {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    border-top: 2px dashed var(--color-tertiary-fixed-dim);
+  }
+
+  .underline-highlight-light {
+    background-image: linear-gradient(120deg, var(--color-primary-fixed-light));
     background-repeat: no-repeat;
     background-size: 100% 0.3em;
     background-position: 0 75%;
   }
 
-  /* Color surface utilities */
-  .bg-paper          { background-color: var(--color-paper); }
-  .bg-surface        { background-color: var(--color-surface); }
-  .bg-surface-low    { background-color: var(--color-surface-container-low); }
-  .bg-surface-high   { background-color: var(--color-surface-container-high); }
-  .bg-ink            { background-color: var(--color-ink); }
-  .bg-highlighter    { background-color: var(--color-highlighter); }
-  .bg-marker         { background-color: var(--color-marker); }
+  .underline-bold {
+    text-decoration: underline;
+    text-decoration-color: var(--color-error);
+    text-decoration-thickness: 6px;
+    text-underline-offset: 8px;
+  }
 
-  .text-charcoal     { color: var(--color-charcoal); }
-  .text-ink          { color: var(--color-ink); }
-  .text-highlighter  { color: var(--color-highlighter); }
-  .text-marker       { color: var(--color-marker); }
-  .text-on-surface   { color: var(--color-on-surface); }
-  .text-muted        { color: var(--color-on-surface-variant); }
+  /* Color surface utilities */
+  .bg-paper {
+    background-color: var(--color-paper);
+  }
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+  .bg-surface-low {
+    background-color: var(--color-surface-container-low);
+  }
+  .bg-surface-high {
+    background-color: var(--color-surface-container-high);
+  }
+  .bg-ink {
+    background-color: var(--color-ink);
+  }
+  .bg-highlighter {
+    background-color: var(--color-highlighter);
+  }
+  .bg-marker {
+    background-color: var(--color-marker);
+  }
+
+  .text-charcoal {
+    color: var(--color-charcoal);
+  }
+  .text-ink {
+    color: var(--color-ink);
+  }
+  .text-highlighter {
+    color: var(--color-highlighter);
+  }
+  .text-marker {
+    color: var(--color-marker);
+  }
+  .text-on-surface {
+    color: var(--color-on-surface);
+  }
+  .text-muted {
+    color: var(--color-on-surface-variant);
+  }
 
   /* Transition helpers */
   .transition-sketch {
@@ -669,5 +754,4 @@
   .transition-fast {
     transition: all var(--duration-fast) var(--ease-default);
   }
-
 }
