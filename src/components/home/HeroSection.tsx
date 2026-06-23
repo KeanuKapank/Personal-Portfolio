@@ -1,13 +1,13 @@
 
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function HeroSection({ }) {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-32 lg:pt-40 py-5">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-8 lg:pt-40">
         <div className="max-w-2xl sm:flex flex-row gap-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
