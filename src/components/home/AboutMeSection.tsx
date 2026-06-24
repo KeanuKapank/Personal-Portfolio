@@ -10,9 +10,7 @@ const AboutMeSection = () => {
   return (
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-headline-md mb-4 rotate-tilt-xsm">
-          <span className="underline-bold">About Me</span> - Buoyant.
-        </h2>
+        <Title name="About Me" extra="Buoyant" />
         <div className="container-popout py-12 px-6">
           <h5 className="text-label-caps mb-5 rotate-tilt-xsm">
             ENTRY #124 // 2026
