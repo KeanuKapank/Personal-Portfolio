@@ -1,3 +1,5 @@
+import Title from "../Reusable/Title";
+
 const AboutMeSection = () => {
   const tags = [
     { text: "Resilient", x: "-5%", y: "-1.25%", rotate: -15 },
