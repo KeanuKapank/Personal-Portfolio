@@ -47,8 +47,8 @@ const AboutMeSection = () => {
                 <li>Jogging</li>
                 <li>Reading</li>
                 <li>Hiking</li>
-                <li>Watching Sport Amabokke</li>
-                <li>Playing Video Games</li>
+                <li>Watching Sport</li>
+                <li>Video Games</li>
               </ul>
             </div>
           </div>

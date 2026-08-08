@@ -165,6 +165,7 @@
 
   --border-width-default: 2px;
   --border-width-thick: 3px;
+  --border-width-slim: 1px;
   --border-color-default: var(--color-charcoal);
 
   /* ----------------------------------------------------------
@@ -225,6 +226,7 @@
   --rotate-tilt-ccw: -1.5deg;
   --rotate-tilt-sm: 0.75deg;
   --rotate-tilt-xsm: -0.25deg;
+  --rotate-tilt-xsmr: 0.25deg;
 }
 
 /* ============================================================
@@ -634,6 +636,9 @@
   .border-charcoal-thick {
     border: var(--border-width-thick) solid var(--color-charcoal);
   }
+  .border-charcoal-slim {
+    border: var(--border-width-slim) solid var(--color-charcoal);
+  }
 
   /* Tilt helpers — "scattered desk" grid-breaking */
   .rotate-tilt-cw {
@@ -647,6 +652,9 @@
   }
   .rotate-tilt-xsm {
     transform: rotate(var(--rotate-tilt-xsm));
+  }
+  .rotate-tilt-xsmr {
+    transform: rotate(var(--rotate-tilt-xsmr));
   }
 
   /* Offset nudge helpers for "scattered paper" positioning */
