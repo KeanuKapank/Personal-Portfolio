@@ -8,7 +8,7 @@ export default function HeroSection({ }) {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-8 lg:pt-40">
-        <div className="max-w-2xl sm:flex flex-row gap-8">
+        <div className="max-w-2xl flex flex-col sm:flex-row gap-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
