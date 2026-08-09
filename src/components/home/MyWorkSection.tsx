@@ -70,7 +70,7 @@ const MyWorkSection = () => {
           here started as an messy idea, passion project before making its way
           to the digital world.
         </p>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6 py-2">
           {projects.map((project) => (
             <Project
               key={project.id}

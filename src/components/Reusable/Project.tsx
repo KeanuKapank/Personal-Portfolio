@@ -11,7 +11,7 @@ export interface IProjectProps {
 const Project = ({ id, imgSrc, title, description, tags }: IProjectProps) => {
   const random = Math.floor(Math.random() * tags.length + 1);  
   return (
-    <div className={`container-popout p-4 ${id % 2 === 0 ? 'rotate-tilt-xsm' : 'rotate-tilt-xsmr'}`}>
+    <div className={`container-popout container-popout-hover p-4 ${id % 2 === 0 ? 'rotate-tilt-xsm' : 'rotate-tilt-xsmr'}`}>
       <div className="py-4 w-full">
         <img src={imgSrc} alt={title} className="w-full aspect-square object-cover border-charcoal-slim" />
       </div>

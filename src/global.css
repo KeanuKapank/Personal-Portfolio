@@ -177,6 +177,8 @@
   --elevation-offset-x: 4px;
   --elevation-offset-y: 4px;
   --elevation-offset-color: var(--color-charcoal);
+  --elevation-offset-color-primary: var(--color-ink);
+
 
   /* Larger offset for primary call-to-action */
   --elevation-offset-x-lg: 6px;
@@ -465,6 +467,20 @@
     background-color: var(--color-surface-container-low);
     color: var(--color-on-surface);
     box-shadow: var(--shadow-offset-sm);
+  }
+  
+  .container-popout-hover {
+    position: relative;
+    border: var(--border-width-thick) solid var(--color-charcoal);
+    background-color: var(--color-surface-container-low);
+    color: var(--color-on-surface);
+    box-shadow: var(--shadow-offset-sm);
+  }
+
+  .container-popout-hover:hover {
+    cursor: pointer;
+    box-shadow: calc(var(--elevation-offset-x) + 0.5px)
+      calc(var(--elevation-offset-y) + 0.5px) 0 0 var(--color-primary-fixed-light);
   }
 
   /* ----------------------------------------------------------
