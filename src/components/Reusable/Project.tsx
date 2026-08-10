@@ -6,12 +6,16 @@ export interface IProjectProps {
   title: string;
   description?: string;
   tags: string[];
+  url?: string;
 }
 
-const Project = ({ id, imgSrc, title, description, tags }: IProjectProps) => {
+const Project = ({ id, imgSrc, title, description, tags, url }: IProjectProps) => {
   const random = Math.floor(Math.random() * tags.length + 1);
   return (
-    <div
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`container-popout container-popout-hover p-4 ${id % 2 === 0 ? "rotate-tilt-xsm" : "rotate-tilt-xsmr"}`}
     >
       <div className="w-full overflow-hidden aspect-auto">
@@ -33,7 +37,7 @@ const Project = ({ id, imgSrc, title, description, tags }: IProjectProps) => {
           </span>
         ))}
       </div>
-    </div>
+    </a>
   );
 };
 

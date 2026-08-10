@@ -9,6 +9,7 @@ const projects: IProjectProps[] = [
     description:
       "A fire-and-forget event streaming API designed to capture UI, API, and database events and publish them to Kafka.",
     tags: [".NET", "Confluent Kafka", "Docker"],
+    url: "https://github.com/KeanuKapank/Javelin"
   },
   {
     id: 2,
@@ -16,7 +17,7 @@ const projects: IProjectProps[] = [
     title: "EduCare",
     description:
       "An educational platform that allows teachers to manage learning content and provide students with an engaging digital learning experience.",
-    tags: ["React Native", "Strapi", ".NET", "PostgreSQL"],
+    tags: ["React Native", "Strapi", ".NET", "PostgreSQL"]
   },
   {
     id: 7,
@@ -25,6 +26,7 @@ const projects: IProjectProps[] = [
     description:
       "EduRise is a professional web-based platform designed to serve as the digital foundation for a modern education consultancy business.",
     tags: ["React", ".NET", "Google Calendar API"],
+    url: "https://github.com/KeanuKapank/Edurise"
   },
   // {
   //   id: 3,
@@ -79,6 +81,7 @@ const MyWorkSection = () => {
               title={project.title}
               description={project.description}
               tags={project.tags}
+              url={project.url}
             />
           ))}
         </div>
