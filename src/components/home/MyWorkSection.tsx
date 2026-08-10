@@ -4,7 +4,7 @@ import Title from "../Reusable/Title";
 const projects: IProjectProps[] = [
   {
     id: 1,
-    imgSrc: "../../public/projects/javilen.png",
+    imgSrc: "/projects/javilen.png",
     title: "Javilen",
     description:
       "A fire-and-forget event streaming API designed to capture UI, API, and database events and publish them to Kafka.",
@@ -12,7 +12,7 @@ const projects: IProjectProps[] = [
   },
   {
     id: 2,
-    imgSrc: "../../public/projects/educare.png",
+    imgSrc: "/projects/educare.png",
     title: "EduCare",
     description:
       "An educational platform that allows teachers to manage learning content and provide students with an engaging digital learning experience.",
@@ -20,10 +20,10 @@ const projects: IProjectProps[] = [
   },
   {
     id: 7,
-    imgSrc: "../../public/projects/edurise.png",
+    imgSrc: "/projects/edurise.png",
     title: "EduRise",
     description:
-      "Edurise is a professional web-based platform designed to serve as the digital foundation for a modern education consultancy business.",
+      "EduRise is a professional web-based platform designed to serve as the digital foundation for a modern education consultancy business.",
     tags: ["React", ".NET", "Google Calendar API"],
   },
   // {
@@ -44,7 +44,7 @@ const projects: IProjectProps[] = [
   // },
   {
     id: 5,
-    imgSrc: "../../public/projects/carpool.png",
+    imgSrc: "/projects/carpool.png",
     title: "CarPool",
     description:
       "A long-distance ride-sharing platform connecting passengers and drivers travelling along similar routes.",
