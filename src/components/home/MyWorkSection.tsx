@@ -4,7 +4,7 @@ import Title from "../Reusable/Title";
 const projects: IProjectProps[] = [
   {
     id: 1,
-    imgSrc: "https://picsum.photos/800/600?random=1",
+    imgSrc: "../../public/projects/javilen.png",
     title: "Javilen",
     description:
       "A fire-and-forget event streaming API designed to capture UI, API, and database events and publish them to Kafka.",
@@ -12,7 +12,7 @@ const projects: IProjectProps[] = [
   },
   {
     id: 2,
-    imgSrc: "https://picsum.photos/800/600?random=2",
+    imgSrc: "../../public/projects/educare.png",
     title: "EduCare",
     description:
       "An educational platform that allows teachers to manage learning content and provide students with an engaging digital learning experience.",
@@ -20,44 +20,44 @@ const projects: IProjectProps[] = [
   },
   {
     id: 7,
-    imgSrc: "https://picsum.photos/800/600?random=7",
+    imgSrc: "../../public/projects/edurise.png",
     title: "EduRise",
     description:
-      "Edurise is a professional web-based platform designed to serve as the digital foundation for a modern education consultancy business",
+      "Edurise is a professional web-based platform designed to serve as the digital foundation for a modern education consultancy business.",
     tags: ["React", ".NET", "Google Calendar API"],
   },
-  {
-    id: 3,
-    imgSrc: "https://picsum.photos/800/600?random=3",
-    title: "Ahoy",
-    description:
-      "A feature flagging system that allows development teams to safely enable, disable, and gradually release application features.",
-    tags: ["C#", ".NET", "Redis", "SQL Server"],
-  },
-  {
-    id: 4,
-    imgSrc: "https://picsum.photos/800/600?random=4",
-    title: "RunTrack",
-    description:
-      "A running companion that tracks workouts, visualizes performance, and helps runners monitor their progress toward personal goals.",
-    tags: ["React", "TypeScript", "Tailwind", "Charts"],
-  },
+  // {
+  //   id: 3,
+  //   imgSrc: "https://picsum.photos/800/600?random=3",
+  //   title: "Ahoy",
+  //   description:
+  //     "A feature flagging system that allows development teams to safely enable, disable, and gradually release application features.",
+  //   tags: ["C#", ".NET", "Redis", "SQL Server"],
+  // },
+  // {
+  //   id: 4,
+  //   imgSrc: "https://picsum.photos/800/600?random=4",
+  //   title: "RunTrack",
+  //   description:
+  //     "A running companion that tracks workouts, visualizes performance, and helps runners monitor their progress toward personal goals.",
+  //   tags: ["React", "TypeScript", "Tailwind", "Charts"],
+  // },
   {
     id: 5,
-    imgSrc: "https://picsum.photos/800/600?random=5",
-    title: "RideConnect",
+    imgSrc: "../../public/projects/carpool.png",
+    title: "CarPool",
     description:
       "A long-distance ride-sharing platform connecting passengers and drivers travelling along similar routes.",
     tags: ["React Native", ".NET", "PostgreSQL", "Docker"],
   },
-  {
-    id: 6,
-    imgSrc: "https://picsum.photos/800/600?random=6",
-    title: "TaskFlow",
-    description:
-      "A collaborative project management application for organizing tasks, tracking progress, and managing team workloads.",
-    tags: ["React", "TypeScript", "Tailwind", "Node.js"],
-  },
+  // {
+  //   id: 6,
+  //   imgSrc: "https://picsum.photos/800/600?random=6",
+  //   title: "TaskFlow",
+  //   description:
+  //     "A collaborative project management application for organizing tasks, tracking progress, and managing team workloads.",
+  //   tags: ["React", "TypeScript", "Tailwind", "Node.js"],
+  // },
 ];
 
 const MyWorkSection = () => {
