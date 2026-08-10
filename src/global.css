@@ -467,6 +467,7 @@
     background-color: var(--color-surface-container-low);
     color: var(--color-on-surface);
     box-shadow: var(--shadow-offset-sm);
+    height: fit-content;
   }
   
   .container-popout-hover {
@@ -475,6 +476,7 @@
     background-color: var(--color-surface-container-low);
     color: var(--color-on-surface);
     box-shadow: var(--shadow-offset-sm);
+    height: fit-content;
   }
 
   .container-popout-hover:hover {
