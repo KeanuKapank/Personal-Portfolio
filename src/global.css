@@ -113,6 +113,7 @@
   --font-weight-semibold: 600;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
+  --font-weight-light: 200;
 
   /* Line heights */
   --line-height-tight: 1.1; /* display */
@@ -485,6 +486,14 @@
       calc(var(--elevation-offset-y) + 0.5px) 0 0 var(--color-primary-fixed-light);
   }
 
+  .container-icon{
+    width: 50%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: var(--color-surface-container);
+    padding: 1rem;
+  }
+
   /* ----------------------------------------------------------
      Tag / Chip — masking-tape / dymo-label style
   ---------------------------------------------------------- */
@@ -621,6 +630,15 @@
     font-size: var(--font-size-caption);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-caption);
+    letter-spacing: 0.05em;
+  }
+  
+  .text-caption-quote {
+    font-family: var(--font-body);
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-caption);
+    color: var(--color-on-surface-variant);
     letter-spacing: 0.05em;
   }
 }

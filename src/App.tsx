@@ -10,8 +10,6 @@ function App() {
       <Routes>
         <Route element={<PageLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<div>About</div>} />
-          <Route path="/projects" element={<div>Projects</div>} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
