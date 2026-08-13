@@ -10,7 +10,7 @@ const AboutMeSection = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-gray-100 py-12" id="aboutme">
       <div className="container mx-auto px-4">
         <Title name="About Me" extra="Buoyant" />
         <div className="container-popout py-12 px-6">

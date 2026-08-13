@@ -24,7 +24,7 @@ const contactDetails: IContactDetail[] = [
 
 const ContactMeSection = () => {
   return (
-    <section className="bg-gray-100 pt-1 pb-6">
+    <section className="bg-gray-100 pt-1 pb-6" id="contact">
       <div className="container mx-auto px-4">
         <Title name="Drop A Note" />
         <div className="container-popout py-12 px-6 sm:flex flex-row gap-4 w-full">
