@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin  } from 'lucide-react';
+import { Phone, Mail, MapPin, SendHorizonal  } from 'lucide-react';
 import type { IContactDetail } from '../Reusable/ContactDetail';
 import ContactDetail from '../Reusable/ContactDetail';
 import Title from '../Reusable/Title';
@@ -68,6 +68,12 @@ const ContactMeSection = () => {
                 placeholder="Your message here..."
                 onChange={() => {}}
               />
+              <button
+                type="submit"
+                className="btn bg-primary text-white flex items-center gap-2 justify-center"
+              >
+                Send Message <SendHorizonal />
+              </button>
             </form>
           </div>
         </div>
