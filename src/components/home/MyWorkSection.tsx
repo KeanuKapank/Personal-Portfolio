@@ -64,7 +64,7 @@ const projects: IProjectProps[] = [
 
 const MyWorkSection = () => {
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-gray-100 py-12" id="projects">
       <div className="container mx-auto px-4">
         <Title name="My Work" />
         <p className="text-caption italic">

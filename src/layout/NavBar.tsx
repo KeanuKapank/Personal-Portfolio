@@ -2,17 +2,17 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { HashLink } from "react-router-hash-link";
 
 const navLinks = [
-  { label: 'Me', path: '/' },
-  { label: 'Projects', path: '/projects' },
-  { label: 'Skills', path: '/skills' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Me', path: '#aboutme' },
+  { label: 'Projects', path: '#projects' },
+  { label: 'Contact', path: '#contact' },
 ];
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [_, setScrolled] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -35,7 +35,9 @@ export default function NavBar() {
 
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map(link => (
-              <Link
+              <HashLink
+                smooth
+                offset={-80}
                 key={link.path}
                 to={link.path}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -45,16 +47,20 @@ export default function NavBar() {
                 }`}
               >
                 {link.label}
-              </Link>
+              </HashLink>
             ))}
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <Link to="/contact">
+            <HashLink
+              smooth
+              offset={-80}
+              to="#contact"
+            >
               <button className="btn bg-primary text-background">
                 Hire Me
               </button>
-            </Link>
+            </HashLink>
           </div>
 
           <button
@@ -88,8 +94,8 @@ export default function NavBar() {
                   {link.label}
                 </Link>
               ))}
-              <Link to="/contact" className="block pt-2">
-                <button className="btn w-full rounded-full font-medium">
+              <Link to="#contact" className="block pt-2">
+                <button className="btn bg-primary text-white w-full rounded-full font-medium">
                   Hire Me
                 </button>
               </Link>

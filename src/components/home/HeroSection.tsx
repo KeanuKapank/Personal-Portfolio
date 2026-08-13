@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function HeroSection({ }) {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden" id="hero">
       {/* Background */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-8 lg:pt-40">
         <div className="max-w-2xl flex flex-col sm:flex-row gap-8">
