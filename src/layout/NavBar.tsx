@@ -24,7 +24,7 @@ export default function NavBar() {
   useEffect(() => setIsOpen(false), [location]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-50 `}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-50`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
@@ -37,7 +37,6 @@ export default function NavBar() {
             {navLinks.map(link => (
               <HashLink
                 smooth
-                offset={-80}
                 key={link.path}
                 to={link.path}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -54,7 +53,6 @@ export default function NavBar() {
           <div className="hidden md:flex items-center gap-3">
             <HashLink
               smooth
-              offset={-80}
               to="#contact"
             >
               <button className="btn bg-primary text-background">
@@ -82,7 +80,8 @@ export default function NavBar() {
           >
             <div className="px-6 py-4 space-y-1">
               {navLinks.map(link => (
-                <Link
+                <HashLink
+                  smooth
                   key={link.path}
                   to={link.path}
                   className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
@@ -92,13 +91,15 @@ export default function NavBar() {
                   }`}
                 >
                   {link.label}
-                </Link>
+                </HashLink>
               ))}
-              <Link to="#contact" className="block pt-2">
+              <HashLink
+                  smooth
+                  to="#contact" className="block pt-2">
                 <button className="btn bg-primary text-white w-full rounded-full font-medium">
                   Hire Me
                 </button>
-              </Link>
+              </HashLink>
             </div>
           </motion.div>
         )}
