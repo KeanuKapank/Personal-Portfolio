@@ -15,7 +15,7 @@ export default function HeroSection({ }) {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div className="w-full">
-              <img src="src\assets\transparent-image.png" alt="Welcome Sketch" className="md:h-full w-full h-full object-cover" />
+              <img src="/transparent-image.png" alt="Welcome Sketch" className="md:h-full w-full h-full object-cover" />
             </div>
           </motion.div>
           <motion.div
